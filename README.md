@@ -67,7 +67,7 @@ NetForensix is open-source software licensed under the MIT License.
 
 <ul><li><h3>Contact:</h3></li></ul>
 For questions, feedback, or collaborations, please feel free to reach out:
-<div>Developer: <a href="https://in.linkedin.com/in/shyam-sunder19">Flanker</a></div>
+<div>Developer: <a href="https://www.linkedin.com/in/pragya-gupta-pg/">Pragya</a></div>
 
 <ul><li><h3>Acknowledgements:</h3></li></ul>
 NetForensix appreciates the following resources:
