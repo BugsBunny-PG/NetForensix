@@ -11,6 +11,11 @@ from extract_size import packet_length, segment_length
 from extract_window_size import init_window_size, actual_pkt_fwd
 from extract_flags import extractFlags
 from predict_model import predict_output
+import warnings
+from sklearn.exceptions import InconsistentVersionWarning
+
+warnings.filterwarnings("ignore", category=InconsistentVersionWarning)
+
 
 def print_welcome_message():
    welcome = r"""
@@ -110,6 +115,7 @@ def main():
         else:
             print("Invalid pcap file. Please provide a valid path to a .pcap file.")
     elif args.result and args.pcap:
+        print_welcome_message()
         if os.path.isfile(args.pcap) and (args.pcap.endswith('.pcap') or args.pcap.endswith('.pcapng')):
             pkt_df, ft_df = run_function_with_progress(flow_file, "flow_file", args.pcap, "res")
             run_function_with_progress(result_file, "result_file", pkt_df, ft_df)
