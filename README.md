@@ -29,7 +29,7 @@ For a visual representation of NetForensix's architecture and operation, please 
 pip install -r requirements.txt
 ```
 4. Open deploy_model.ipynb file in ML_model folder and run each cell one by one. This will do a minor preprocessing,
-    train, test your model and save it into a file using joblib that it will use later.
+    train, test your model and save it into a file using joblib that it will use later.<br>
 5. All done !!
 
 <ul><li><h3>How to use:</h3></li></ul>
